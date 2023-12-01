@@ -30,6 +30,15 @@ test: clean s21_decimal.a test.c
 	gcc -L. -ls21_decimal binary/test.o -lcheck -lm -lpthread -o run_tests
 	./run_tests
 
+dvi: clean
+	mkdir -p docs
+	doxygen Doxyfile
+	mv html latex docs
+	open docs/html/index.html
+
+docs:
+	open docs/html/index.html
+
 git: clean
 	git add -A
 	git commit -m "$m"
@@ -43,4 +52,4 @@ gcov_report: test
 	open report/report.html
 
 clean:
-	rm -rf *.gcov *.gcno *.gcda run_tests binary
+	rm -rf *.gcov *.gcno *.gcda run_tests binary docs

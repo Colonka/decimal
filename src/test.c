@@ -5,6 +5,10 @@
 
 #include "s21_decimal.h"
 
+// #include "checking/checking.h"
+// #include "s21_main_func.h"
+// #include "utils/s21_utils.h"
+
 START_TEST(add) {
   s21_decimal dec1 = {{666, 0, 0, 0}};
   s21_decimal dec2 = {{9723, 0, 0, 0}};

@@ -1,4 +1,4 @@
 #pragma once
 
-#include "checking/checking.h"
+#include "s21_main_func.h"
 #include "utils/s21_utils.h"

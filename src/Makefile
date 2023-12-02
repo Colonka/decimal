@@ -1,3 +1,5 @@
+CHECK_FLAGS = $(shell pkg-config --libs check --cflags)
+
 FLAGS= -Wall -Wextra -Werror
 STD= -std=c11
 GCOVR= -fprofile-arcs -ftest-coverage
@@ -8,26 +10,21 @@ style:
 	clang-format -i -style=google *.c
 	clang-format -style=google -n *.c
 
-s21_decimal.a: s21_decimal s21_utils s21_checking s21_utils_extra
+s21_decimal.a: s21_decimal s21_utils
 	ar rc libs21_decimal.a binary/*.o
 	ranlib libs21_decimal.a
 
 s21_decimal: s21_main_func.c s21_main_func.h
 	mkdir -p binary
-	cd binary && gcc ${FLAGS} ${STD} -c ../s21_main_func.c
+	cd binary && gcc ${FLAGS} ${STD} ${GCOVR} -c ../s21_main_func.c
 
-s21_utils: utils/s21_utils.c utils/s21_utils.h
-	cd binary && gcc ${FLAGS} ${STD} -c ../utils/s21_utils.c
+s21_utils: utils/s21_utils.c utils/s21_extra_utils.c utils/s21_utils.h
+	cd binary && gcc ${FLAGS} ${STD} -c ../utils/*.c
 
-s21_utils_extra: utils/s21_extra_utils.c utils/s21_utils.h
-	cd binary gcc ${FLAGS} ${STD} -c ../utils/s21_extra_utils.c
-
-s21_checking: checking/checking.c checking/checking.h
-	cd binary && gcc ${FLAGS} ${STD} -c ../checking/checking.c
-
-test: clean s21_decimal.a test.c
+test: test.c
+	mkdir -p binary
 	cd binary && gcc ${FLAGS} ${STD} ${GCOVR} -c ../test.c
-	gcc -L. -ls21_decimal binary/test.o -lcheck -lm -lpthread -o run_tests
+	gcc -L. -ls21_decimal binary/test.o ${GCOVR} $(CHECK_FLAGS) -o run_tests
 	./run_tests
 
 dvi: clean
@@ -39,17 +36,23 @@ dvi: clean
 docs:
 	open docs/html/index.html
 
-git: clean
+git: clean_for_git
 	git add -A
 	git commit -m "$m"
 	git push origin "$b"
 
-gcov_report: test
+gcov_report_build: test
 	mkdir -p report
 	./run_tests
-	gcovr --object-directory=binary
-	gcovr -r . --html --html-details -o report/report.html
+	gcov -f *.gcno
+	gcovr -r. --html --html-details -o report/report.html
+	open report/report.html
+
+gcov_report: 
 	open report/report.html
 
 clean:
-	rm -rf *.gcov *.gcno *.gcda run_tests binary docs
+	rm -rf *.gcov *.gcno *.gcda run_tests binary docs *.o *.a
+
+clean_for_git:
+	rm -rf run_tests binary

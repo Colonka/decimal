@@ -8,11 +8,29 @@ In this project I've implemented the s21_decimal.h library in the C programming 
 
 ## Instruction for running
 
+Include s21_decimal.h in your file and link libs21_decimal.a while compilation of your source files.
+
+`#include "<Directory where the header resides>/s21_math.h"`
+
+`-L<Directory where the library resides> -l<library name>`
+
+## Instriction for reinstalling
+
 Being in decimal/src folder run command `make` in terminal that create static library s21_decimal. Then include s21_decimal.h in your file and link libs21_decimal.a while compilation of your source files.
 
 `#include "<Directory where the header resides>/s21_math.h"`
 
 `-L<Directory where the library resides> -l<library name>`
+
+## Instruction for testing
+
+Being in decimal/src folder run command `make test`
+
+*Note: you need installed `pkg-config` for choosing flags for check.h library linking 
+
+## Instruction for gcovr test coverage
+
+Being in decimal/src folder run command `make gcovr_report`
 
 ## Documentation
 

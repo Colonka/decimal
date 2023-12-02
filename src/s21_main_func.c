@@ -1,4 +1,4 @@
-#include "s21_decimal.h"
+#include "s21_main_func.h"
 
 #include <float.h>
 #include <limits.h>
@@ -7,7 +7,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "checking/checking.h"
 #include "utils/s21_utils.h"
 
 // Arithmetic Operators

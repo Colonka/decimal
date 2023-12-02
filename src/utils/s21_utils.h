@@ -286,4 +286,18 @@ int big_s21_is_greater(s21_big_decimal first, s21_big_decimal second);
  */
 int big_s21_is_greater_or_equal(s21_big_decimal first, s21_big_decimal second);
 
+/**
+ * @brief Function that check number less than minimal possible number or not
+ * @param val number
+ * @return 1 - less, 0 - not less
+ */
+int is_too_small(float val);
+
+/**
+ * @brief Function that check number greater than max possible number or not
+ * @param val number
+ * @return 1 - greater, 0 - not greater
+ */
+int is_too_big(float val);
+
 #endif

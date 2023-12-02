@@ -1,0 +1,791 @@
+\doxysection{utils/s21\+\_\+utils.h File Reference}
+\hypertarget{s21__utils_8h}{}\label{s21__utils_8h}\index{utils/s21\_utils.h@{utils/s21\_utils.h}}
+{\ttfamily \#include \"{}../s21\+\_\+main\+\_\+func.\+h\"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{s21__utils_8h_af8c6282c1b69c0f695b9d6c4e09136e0}{convert\+\_\+to\+\_\+addcode}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+1)
+\begin{DoxyCompactList}\small\item\em Function that translate decimal to addcode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_af8a705a82eb737bfab8f95df6e8d4d68}{big\+\_\+convert\+\_\+to\+\_\+addcode}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+1)
+\begin{DoxyCompactList}\small\item\em Function that translate bigdecimal to addcode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_a5fc4485cc0a10e17004861a059c540a7}{init\+\_\+decimal}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Decimal number ititialization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_a074ccc292b82fca89aa1bb30da8b4781}{init\+\_\+big\+\_\+decimal}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em big\+\_\+decimal number ititialization \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \mbox{\hyperlink{s21__utils_8h_a905fe28c53b743a3de745437a2da452d}{create\+\_\+decimal}} (unsigned int low\+\_\+num, unsigned int mid\+\_\+num, unsigned int high\+\_\+num, unsigned int scale\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Decimal number ititialization. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{s21__utils_8h_aeaa34ed1ee81822d94b4fe823bef9ae4}{get\+\_\+full\+\_\+bits}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} val)
+\begin{DoxyCompactList}\small\item\em Function that transform number of mantissa from decimal to float. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a445be1092712972c8c5cabeac3d53e77}{get\+\_\+bit}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} val, int i)
+\begin{DoxyCompactList}\small\item\em Function that returns value of i-\/th bit for decimal. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a41dcfac81ad724e8f586149ce0946be4}{big\+\_\+get\+\_\+bit}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} val, int i)
+\begin{DoxyCompactList}\small\item\em Function that returns value of i-\/th bit for big\+\_\+decimal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_aee88b3d8ce18d40d9b30a44538894505}{set\+\_\+bit}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val, int i, int value)
+\begin{DoxyCompactList}\small\item\em Function that set i-\/th bit for decimal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_af594595acdb0c544d76aa670b193b838}{big\+\_\+set\+\_\+bit}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val, int i, int value)
+\begin{DoxyCompactList}\small\item\em Function that set i-\/th bit for big\+\_\+decimal. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_af8ff2a48670d34f9d650bb8dd33d8b08}{last\+\_\+bit}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} val)
+\begin{DoxyCompactList}\small\item\em Function that find first bit that on in decimal number. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a44ef8b9409489a5e50dbc819d4f36a67}{get\+\_\+scale}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} val)
+\begin{DoxyCompactList}\small\item\em Function that gets decimal number\textquotesingle{}s scale. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_ad9f7a892f74d9cc7acf37f930f512c6c}{big\+\_\+get\+\_\+scale}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} val)
+\begin{DoxyCompactList}\small\item\em Function that gets big\+\_\+decimal number\textquotesingle{}s scale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_ae2ae63099d1245ac094b244120fa9068}{set\+\_\+scale}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val, int \mbox{\hyperlink{s21__main__func_8h_a06fc87d81c62e9abb8790b6e5713c55ba83809220a14c97170cd08f22e480acdc}{scale}})
+\begin{DoxyCompactList}\small\item\em Function that sets decimal number\textquotesingle{}s scale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_ac58d6bd3e9df4260319923dc2a04f179}{big\+\_\+set\+\_\+scale}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val, int \mbox{\hyperlink{s21__main__func_8h_a06fc87d81c62e9abb8790b6e5713c55ba83809220a14c97170cd08f22e480acdc}{scale}})
+\begin{DoxyCompactList}\small\item\em Function that sets big\+\_\+decimal number\textquotesingle{}s scale. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a1a1e0ad87e24ae3fdf2c249105bbe7d6}{scale\+\_\+eq}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+1, \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Function that equalize scales of two decimal numbers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a1f6960b39a4d22ddf3204a7e3a9df895}{big\+\_\+scale\+\_\+eq}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+1, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Function that equalizes scales of two big\+\_\+decimal numbers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a0838e092794ee59acf4e383e10cc4f0e}{get\+\_\+sign}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} val)
+\begin{DoxyCompactList}\small\item\em Function that gets decimal number sign. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a3ddda5234384be97925e67b7cc29c721}{big\+\_\+get\+\_\+sign}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} val)
+\begin{DoxyCompactList}\small\item\em Function that gets big\+\_\+decimal number sign. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_a1aa649b12a77193fb4c2acffddc4b3c9}{set\+\_\+sign}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val, int sign)
+\begin{DoxyCompactList}\small\item\em Function that sets decimal number sign. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_a47e074c0e0ea100c33c2fbf1274ca643}{big\+\_\+set\+\_\+sign}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val, int sign)
+\begin{DoxyCompactList}\small\item\em Function that sets big\+\_\+decimal number sign. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a1ffec7f793323038ffe43b182d6b889c}{move\+\_\+left}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val, int move\+\_\+value)
+\begin{DoxyCompactList}\small\item\em bitwise left shift \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_ada36b60c7349617d2d3b60fea028fa84}{big\+\_\+move\+\_\+left}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val, int move\+\_\+value)
+\begin{DoxyCompactList}\small\item\em bitwise left shift \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_ae1f9513bfac66e231c9181536ee3a7f3}{bit\+\_\+addition}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+1, \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+2, \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}result, int code)
+\begin{DoxyCompactList}\small\item\em Add bits that content mantissa of two decimals. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a732cfbe94ca2d5c2d21eaf5c63260794}{big\+\_\+bit\+\_\+addition}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+1, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+2, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}result, int code)
+\begin{DoxyCompactList}\small\item\em Add bits that content mantissa of two big\+\_\+decimals. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a5a0598add14ccde6c515a3b491612f08}{zero\+\_\+check}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} val\+\_\+1, \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} val\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Function that check decimal numbers is zero or not. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a517941865857d820cd6c40a4801da37a}{big\+\_\+zero\+\_\+check}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} val\+\_\+1, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} val\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Function that check big\+\_\+decimal numbers is zero or not. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_af349e25d12cb2aa5468bfc9f1c96a590}{is\+\_\+negative}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+1, \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}val\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Check value sign of decimal numbers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_a2ac25e7c16cd1d080f84c49d09a0b6c5}{copy\+\_\+bits}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} src, \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}dest)
+\begin{DoxyCompactList}\small\item\em Copy from src to dest only mantissa of decimal number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_a6ef13163a8b6721057f2bdf5786281cf}{big\+\_\+copy\+\_\+bits}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} src, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}dest)
+\begin{DoxyCompactList}\small\item\em Copy from src to dest only mantissa of big\+\_\+decimal number. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_adfada1812609f29ddf7dadec1e7c58fd}{div\+\_\+only\+\_\+bits}} (\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} value\+\_\+1, \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} value\+\_\+2, \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}div\+\_\+remainder, \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Division only mantissa of two decimal numbers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_a4c578bf454bea3798b95170ee69ab473}{big\+\_\+div\+\_\+only\+\_\+bits}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} value\+\_\+1, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} value\+\_\+2, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}div\+\_\+remainder, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Division only mantissa of two big\+\_\+decimal numbers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{s21__utils_8h_afaeae72f2838dead3dd9d4b6f86e0fba}{float\+\_\+to\+\_\+bin}} (float num, \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Function that transform nunber from float to decimal. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a9a7426915f45f0609189298aa858d25e}{big\+\_\+s21\+\_\+is\+\_\+equal}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} first, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} second)
+\begin{DoxyCompactList}\small\item\em Function that check two big\+\_\+decimal is equal or not. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a1392771b11ff76541c9f6f1f1ff3089a}{big\+\_\+s21\+\_\+is\+\_\+greater}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} first, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} second)
+\begin{DoxyCompactList}\small\item\em Function that check that first big\+\_\+decimal is greater than second. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a7f4d259129b169e83ab10d290404e632}{big\+\_\+s21\+\_\+is\+\_\+greater\+\_\+or\+\_\+equal}} (\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} first, \mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} second)
+\begin{DoxyCompactList}\small\item\em Function that check that first big\+\_\+decimal is greater or equal than second. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a96de8164129be180a3f321b10d5130f6}{is\+\_\+too\+\_\+small}} (float val)
+\begin{DoxyCompactList}\small\item\em Function that check number less than minimal possible number or not. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{s21__utils_8h_a001f759867da590d5037e3825fed8b91}{is\+\_\+too\+\_\+big}} (float val)
+\begin{DoxyCompactList}\small\item\em Function that check number greater than max possible number or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{s21__utils_8h_a732cfbe94ca2d5c2d21eaf5c63260794}\label{s21__utils_8h_a732cfbe94ca2d5c2d21eaf5c63260794} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_bit\_addition@{big\_bit\_addition}}
+\index{big\_bit\_addition@{big\_bit\_addition}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_bit\_addition()}{big\_bit\_addition()}}
+{\footnotesize\ttfamily int big\+\_\+bit\+\_\+addition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+1,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+2,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{result,  }\item[{int}]{code }\end{DoxyParamCaption})}
+
+
+
+Add bits that content mantissa of two big\+\_\+decimals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+1} & first decimal number \\
+\hline
+{\em val\+\_\+2} & second decimal number \\
+\hline
+{\em result} & pointer to decimal number result \\
+\hline
+{\em code} & ок -\/ add, extra -\/ addcode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+code error 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_af8a705a82eb737bfab8f95df6e8d4d68}\label{s21__utils_8h_af8a705a82eb737bfab8f95df6e8d4d68} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_convert\_to\_addcode@{big\_convert\_to\_addcode}}
+\index{big\_convert\_to\_addcode@{big\_convert\_to\_addcode}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_convert\_to\_addcode()}{big\_convert\_to\_addcode()}}
+{\footnotesize\ttfamily void big\+\_\+convert\+\_\+to\+\_\+addcode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+1 }\end{DoxyParamCaption})}
+
+
+
+Function that translate bigdecimal to addcode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+1} & pointer to bigdecimal \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_a6ef13163a8b6721057f2bdf5786281cf}\label{s21__utils_8h_a6ef13163a8b6721057f2bdf5786281cf} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_copy\_bits@{big\_copy\_bits}}
+\index{big\_copy\_bits@{big\_copy\_bits}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_copy\_bits()}{big\_copy\_bits()}}
+{\footnotesize\ttfamily void big\+\_\+copy\+\_\+bits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{src,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{dest }\end{DoxyParamCaption})}
+
+
+
+Copy from src to dest only mantissa of big\+\_\+decimal number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & decimal number from copy \\
+\hline
+{\em dest} & decimal number to copy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_a4c578bf454bea3798b95170ee69ab473}\label{s21__utils_8h_a4c578bf454bea3798b95170ee69ab473} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_div\_only\_bits@{big\_div\_only\_bits}}
+\index{big\_div\_only\_bits@{big\_div\_only\_bits}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_div\_only\_bits()}{big\_div\_only\_bits()}}
+{\footnotesize\ttfamily void big\+\_\+div\+\_\+only\+\_\+bits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{value\+\_\+1,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{value\+\_\+2,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{div\+\_\+remainder,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Division only mantissa of two big\+\_\+decimal numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+\_\+1} & divisible decimal \\
+\hline
+{\em value\+\_\+2} & divider decimal \\
+\hline
+{\em div\+\_\+remainder} & pointer to big\+\_\+decimal number that content division remainder \\
+\hline
+{\em result} & pointer to big\+\_\+decimal number that content integer part of number \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_a41dcfac81ad724e8f586149ce0946be4}\label{s21__utils_8h_a41dcfac81ad724e8f586149ce0946be4} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_get\_bit@{big\_get\_bit}}
+\index{big\_get\_bit@{big\_get\_bit}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_get\_bit()}{big\_get\_bit()}}
+{\footnotesize\ttfamily int big\+\_\+get\+\_\+bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{val,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Function that returns value of i-\/th bit for big\+\_\+decimal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & big\+\_\+decimal number \\
+\hline
+{\em i} & bit number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value specified bit (0 -\/ bit off, 1 -\/ bit on) 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_ad9f7a892f74d9cc7acf37f930f512c6c}\label{s21__utils_8h_ad9f7a892f74d9cc7acf37f930f512c6c} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_get\_scale@{big\_get\_scale}}
+\index{big\_get\_scale@{big\_get\_scale}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_get\_scale()}{big\_get\_scale()}}
+{\footnotesize\ttfamily int big\+\_\+get\+\_\+scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Function that gets big\+\_\+decimal number\textquotesingle{}s scale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of scale 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a3ddda5234384be97925e67b7cc29c721}\label{s21__utils_8h_a3ddda5234384be97925e67b7cc29c721} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_get\_sign@{big\_get\_sign}}
+\index{big\_get\_sign@{big\_get\_sign}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_get\_sign()}{big\_get\_sign()}}
+{\footnotesize\ttfamily int big\+\_\+get\+\_\+sign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Function that gets big\+\_\+decimal number sign. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sign value of number (0 -\/ positive, 1 -\/ negative) 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_ada36b60c7349617d2d3b60fea028fa84}\label{s21__utils_8h_ada36b60c7349617d2d3b60fea028fa84} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_move\_left@{big\_move\_left}}
+\index{big\_move\_left@{big\_move\_left}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_move\_left()}{big\_move\_left()}}
+{\footnotesize\ttfamily int big\+\_\+move\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val,  }\item[{int}]{move\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+bitwise left shift 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & big\+\_\+decimal number \\
+\hline
+{\em move\+\_\+value} & bits amount to shift \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+code error 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a9a7426915f45f0609189298aa858d25e}\label{s21__utils_8h_a9a7426915f45f0609189298aa858d25e} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_s21\_is\_equal@{big\_s21\_is\_equal}}
+\index{big\_s21\_is\_equal@{big\_s21\_is\_equal}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_s21\_is\_equal()}{big\_s21\_is\_equal()}}
+{\footnotesize\ttfamily int big\+\_\+s21\+\_\+is\+\_\+equal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{first,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{second }\end{DoxyParamCaption})}
+
+
+
+Function that check two big\+\_\+decimal is equal or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & first decimal \\
+\hline
+{\em second} & second decimal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ first != second, 1 -\/ first == second 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a1392771b11ff76541c9f6f1f1ff3089a}\label{s21__utils_8h_a1392771b11ff76541c9f6f1f1ff3089a} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_s21\_is\_greater@{big\_s21\_is\_greater}}
+\index{big\_s21\_is\_greater@{big\_s21\_is\_greater}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_s21\_is\_greater()}{big\_s21\_is\_greater()}}
+{\footnotesize\ttfamily int big\+\_\+s21\+\_\+is\+\_\+greater (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{first,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{second }\end{DoxyParamCaption})}
+
+
+
+Function that check that first big\+\_\+decimal is greater than second. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & first decimal \\
+\hline
+{\em second} & second decimal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ second \texorpdfstring{$>$}{>}= first, 1 -\/ first \texorpdfstring{$>$}{>} second 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a7f4d259129b169e83ab10d290404e632}\label{s21__utils_8h_a7f4d259129b169e83ab10d290404e632} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_s21\_is\_greater\_or\_equal@{big\_s21\_is\_greater\_or\_equal}}
+\index{big\_s21\_is\_greater\_or\_equal@{big\_s21\_is\_greater\_or\_equal}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_s21\_is\_greater\_or\_equal()}{big\_s21\_is\_greater\_or\_equal()}}
+{\footnotesize\ttfamily int big\+\_\+s21\+\_\+is\+\_\+greater\+\_\+or\+\_\+equal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{first,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{second }\end{DoxyParamCaption})}
+
+
+
+Function that check that first big\+\_\+decimal is greater or equal than second. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & first decimal \\
+\hline
+{\em second} & second decimal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ second \texorpdfstring{$>$}{>} first, 1 -\/ first \texorpdfstring{$>$}{>}= second 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a1f6960b39a4d22ddf3204a7e3a9df895}\label{s21__utils_8h_a1f6960b39a4d22ddf3204a7e3a9df895} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_scale\_eq@{big\_scale\_eq}}
+\index{big\_scale\_eq@{big\_scale\_eq}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_scale\_eq()}{big\_scale\_eq()}}
+{\footnotesize\ttfamily int big\+\_\+scale\+\_\+eq (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+1,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Function that equalizes scales of two big\+\_\+decimal numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+1} & pointer to decimal number \\
+\hline
+{\em val\+\_\+2} & pointer to decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+code error 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_af594595acdb0c544d76aa670b193b838}\label{s21__utils_8h_af594595acdb0c544d76aa670b193b838} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_set\_bit@{big\_set\_bit}}
+\index{big\_set\_bit@{big\_set\_bit}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_set\_bit()}{big\_set\_bit()}}
+{\footnotesize\ttfamily void big\+\_\+set\+\_\+bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val,  }\item[{int}]{i,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Function that set i-\/th bit for big\+\_\+decimal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & pointer to big\+\_\+decimal number \\
+\hline
+{\em i} & bit number \\
+\hline
+{\em value} & setting bit value (0 or 1) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_ac58d6bd3e9df4260319923dc2a04f179}\label{s21__utils_8h_ac58d6bd3e9df4260319923dc2a04f179} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_set\_scale@{big\_set\_scale}}
+\index{big\_set\_scale@{big\_set\_scale}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_set\_scale()}{big\_set\_scale()}}
+{\footnotesize\ttfamily void big\+\_\+set\+\_\+scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val,  }\item[{int}]{scale }\end{DoxyParamCaption})}
+
+
+
+Function that sets big\+\_\+decimal number\textquotesingle{}s scale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & pointer to decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of scale 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a47e074c0e0ea100c33c2fbf1274ca643}\label{s21__utils_8h_a47e074c0e0ea100c33c2fbf1274ca643} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_set\_sign@{big\_set\_sign}}
+\index{big\_set\_sign@{big\_set\_sign}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_set\_sign()}{big\_set\_sign()}}
+{\footnotesize\ttfamily void big\+\_\+set\+\_\+sign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val,  }\item[{int}]{sign }\end{DoxyParamCaption})}
+
+
+
+Function that sets big\+\_\+decimal number sign. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & decimal number \\
+\hline
+{\em sign} & sign value of number (0 -\/ positive, 1 -\/ negative) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_a517941865857d820cd6c40a4801da37a}\label{s21__utils_8h_a517941865857d820cd6c40a4801da37a} 
+\index{s21\_utils.h@{s21\_utils.h}!big\_zero\_check@{big\_zero\_check}}
+\index{big\_zero\_check@{big\_zero\_check}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{big\_zero\_check()}{big\_zero\_check()}}
+{\footnotesize\ttfamily int big\+\_\+zero\+\_\+check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{val\+\_\+1,  }\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}}}]{val\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Function that check big\+\_\+decimal numbers is zero or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+1} & first decimal number \\
+\hline
+{\em val\+\_\+2} & second decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ both of them is zero, 1 -\/ isn\textquotesingle{}t zero (at least one of them) 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_ae1f9513bfac66e231c9181536ee3a7f3}\label{s21__utils_8h_ae1f9513bfac66e231c9181536ee3a7f3} 
+\index{s21\_utils.h@{s21\_utils.h}!bit\_addition@{bit\_addition}}
+\index{bit\_addition@{bit\_addition}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{bit\_addition()}{bit\_addition()}}
+{\footnotesize\ttfamily int bit\+\_\+addition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+1,  }\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+2,  }\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{result,  }\item[{int}]{code }\end{DoxyParamCaption})}
+
+
+
+Add bits that content mantissa of two decimals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+1} & first decimal number \\
+\hline
+{\em val\+\_\+2} & second decimal number \\
+\hline
+{\em result} & pointer to decimal number result \\
+\hline
+{\em code} & ок -\/ add, extra -\/ addcode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+code error 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_af8c6282c1b69c0f695b9d6c4e09136e0}\label{s21__utils_8h_af8c6282c1b69c0f695b9d6c4e09136e0} 
+\index{s21\_utils.h@{s21\_utils.h}!convert\_to\_addcode@{convert\_to\_addcode}}
+\index{convert\_to\_addcode@{convert\_to\_addcode}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{convert\_to\_addcode()}{convert\_to\_addcode()}}
+{\footnotesize\ttfamily void convert\+\_\+to\+\_\+addcode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+1 }\end{DoxyParamCaption})}
+
+
+
+Function that translate decimal to addcode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+1} & pointer to decimal \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_a2ac25e7c16cd1d080f84c49d09a0b6c5}\label{s21__utils_8h_a2ac25e7c16cd1d080f84c49d09a0b6c5} 
+\index{s21\_utils.h@{s21\_utils.h}!copy\_bits@{copy\_bits}}
+\index{copy\_bits@{copy\_bits}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{copy\_bits()}{copy\_bits()}}
+{\footnotesize\ttfamily void copy\+\_\+bits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{src,  }\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{dest }\end{DoxyParamCaption})}
+
+
+
+Copy from src to dest only mantissa of decimal number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & decimal number from copy \\
+\hline
+{\em dest} & decimal number to copy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_a905fe28c53b743a3de745437a2da452d}\label{s21__utils_8h_a905fe28c53b743a3de745437a2da452d} 
+\index{s21\_utils.h@{s21\_utils.h}!create\_decimal@{create\_decimal}}
+\index{create\_decimal@{create\_decimal}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{create\_decimal()}{create\_decimal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} create\+\_\+decimal (\begin{DoxyParamCaption}\item[{unsigned int}]{low\+\_\+num,  }\item[{unsigned int}]{mid\+\_\+num,  }\item[{unsigned int}]{high\+\_\+num,  }\item[{unsigned int}]{scale\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Decimal number ititialization. 
+
+\begin{DoxyReturn}{Returns}
+decimal number 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_adfada1812609f29ddf7dadec1e7c58fd}\label{s21__utils_8h_adfada1812609f29ddf7dadec1e7c58fd} 
+\index{s21\_utils.h@{s21\_utils.h}!div\_only\_bits@{div\_only\_bits}}
+\index{div\_only\_bits@{div\_only\_bits}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{div\_only\_bits()}{div\_only\_bits()}}
+{\footnotesize\ttfamily void div\+\_\+only\+\_\+bits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{value\+\_\+1,  }\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{value\+\_\+2,  }\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{div\+\_\+remainder,  }\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Division only mantissa of two decimal numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+\_\+1} & divisible decimal \\
+\hline
+{\em value\+\_\+2} & divider decimal \\
+\hline
+{\em div\+\_\+remainder} & pointer to decimal number that content division remainder \\
+\hline
+{\em result} & pointer to decimal number that content integer part of number \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_afaeae72f2838dead3dd9d4b6f86e0fba}\label{s21__utils_8h_afaeae72f2838dead3dd9d4b6f86e0fba} 
+\index{s21\_utils.h@{s21\_utils.h}!float\_to\_bin@{float\_to\_bin}}
+\index{float\_to\_bin@{float\_to\_bin}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{float\_to\_bin()}{float\_to\_bin()}}
+{\footnotesize\ttfamily void float\+\_\+to\+\_\+bin (\begin{DoxyParamCaption}\item[{float}]{num,  }\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})}
+
+
+
+Function that transform nunber from float to decimal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & float number \\
+\hline
+{\em result} & decimal number \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_a445be1092712972c8c5cabeac3d53e77}\label{s21__utils_8h_a445be1092712972c8c5cabeac3d53e77} 
+\index{s21\_utils.h@{s21\_utils.h}!get\_bit@{get\_bit}}
+\index{get\_bit@{get\_bit}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{get\_bit()}{get\_bit()}}
+{\footnotesize\ttfamily int get\+\_\+bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{val,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Function that returns value of i-\/th bit for decimal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & decimal number \\
+\hline
+{\em i} & bit number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value specified bit (0 -\/ bit off, 1 -\/ bit on) 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_aeaa34ed1ee81822d94b4fe823bef9ae4}\label{s21__utils_8h_aeaa34ed1ee81822d94b4fe823bef9ae4} 
+\index{s21\_utils.h@{s21\_utils.h}!get\_full\_bits@{get\_full\_bits}}
+\index{get\_full\_bits@{get\_full\_bits}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{get\_full\_bits()}{get\_full\_bits()}}
+{\footnotesize\ttfamily float get\+\_\+full\+\_\+bits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Function that transform number of mantissa from decimal to float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float number of mantissa 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a44ef8b9409489a5e50dbc819d4f36a67}\label{s21__utils_8h_a44ef8b9409489a5e50dbc819d4f36a67} 
+\index{s21\_utils.h@{s21\_utils.h}!get\_scale@{get\_scale}}
+\index{get\_scale@{get\_scale}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{get\_scale()}{get\_scale()}}
+{\footnotesize\ttfamily int get\+\_\+scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Function that gets decimal number\textquotesingle{}s scale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of scale 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a0838e092794ee59acf4e383e10cc4f0e}\label{s21__utils_8h_a0838e092794ee59acf4e383e10cc4f0e} 
+\index{s21\_utils.h@{s21\_utils.h}!get\_sign@{get\_sign}}
+\index{get\_sign@{get\_sign}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{get\_sign()}{get\_sign()}}
+{\footnotesize\ttfamily int get\+\_\+sign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Function that gets decimal number sign. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sign value of number (0 -\/ positive, 1 -\/ negative) 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a074ccc292b82fca89aa1bb30da8b4781}\label{s21__utils_8h_a074ccc292b82fca89aa1bb30da8b4781} 
+\index{s21\_utils.h@{s21\_utils.h}!init\_big\_decimal@{init\_big\_decimal}}
+\index{init\_big\_decimal@{init\_big\_decimal}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{init\_big\_decimal()}{init\_big\_decimal()}}
+{\footnotesize\ttfamily void init\+\_\+big\+\_\+decimal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__big__decimal}{s21\+\_\+big\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+big\+\_\+decimal number ititialization 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & pointer to big\+\_\+decimal number \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_a5fc4485cc0a10e17004861a059c540a7}\label{s21__utils_8h_a5fc4485cc0a10e17004861a059c540a7} 
+\index{s21\_utils.h@{s21\_utils.h}!init\_decimal@{init\_decimal}}
+\index{init\_decimal@{init\_decimal}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{init\_decimal()}{init\_decimal()}}
+{\footnotesize\ttfamily void init\+\_\+decimal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Decimal number ititialization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & pointer to decimal number \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_af349e25d12cb2aa5468bfc9f1c96a590}\label{s21__utils_8h_af349e25d12cb2aa5468bfc9f1c96a590} 
+\index{s21\_utils.h@{s21\_utils.h}!is\_negative@{is\_negative}}
+\index{is\_negative@{is\_negative}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{is\_negative()}{is\_negative()}}
+{\footnotesize\ttfamily int is\+\_\+negative (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+1,  }\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Check value sign of decimal numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+1} & first decimal number \\
+\hline
+{\em val\+\_\+2} & second decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ both same value sign, 1 -\/ first decimal number is positive, -\/1 -\/ second decimal number is positive 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a001f759867da590d5037e3825fed8b91}\label{s21__utils_8h_a001f759867da590d5037e3825fed8b91} 
+\index{s21\_utils.h@{s21\_utils.h}!is\_too\_big@{is\_too\_big}}
+\index{is\_too\_big@{is\_too\_big}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{is\_too\_big()}{is\_too\_big()}}
+{\footnotesize\ttfamily int is\+\_\+too\+\_\+big (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})}
+
+
+
+Function that check number greater than max possible number or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ greater, 0 -\/ not greater 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a96de8164129be180a3f321b10d5130f6}\label{s21__utils_8h_a96de8164129be180a3f321b10d5130f6} 
+\index{s21\_utils.h@{s21\_utils.h}!is\_too\_small@{is\_too\_small}}
+\index{is\_too\_small@{is\_too\_small}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{is\_too\_small()}{is\_too\_small()}}
+{\footnotesize\ttfamily int is\+\_\+too\+\_\+small (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})}
+
+
+
+Function that check number less than minimal possible number or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ less, 0 -\/ not less 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_af8ff2a48670d34f9d650bb8dd33d8b08}\label{s21__utils_8h_af8ff2a48670d34f9d650bb8dd33d8b08} 
+\index{s21\_utils.h@{s21\_utils.h}!last\_bit@{last\_bit}}
+\index{last\_bit@{last\_bit}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{last\_bit()}{last\_bit()}}
+{\footnotesize\ttfamily int last\+\_\+bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Function that find first bit that on in decimal number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/95 -\/ bit\textquotesingle{}s number that first on, -\/1 -\/ if all bits are off 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a1ffec7f793323038ffe43b182d6b889c}\label{s21__utils_8h_a1ffec7f793323038ffe43b182d6b889c} 
+\index{s21\_utils.h@{s21\_utils.h}!move\_left@{move\_left}}
+\index{move\_left@{move\_left}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{move\_left()}{move\_left()}}
+{\footnotesize\ttfamily int move\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val,  }\item[{int}]{move\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+bitwise left shift 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & decimal number \\
+\hline
+{\em move\+\_\+value} & bits amount to shift \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+code error 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a1a1e0ad87e24ae3fdf2c249105bbe7d6}\label{s21__utils_8h_a1a1e0ad87e24ae3fdf2c249105bbe7d6} 
+\index{s21\_utils.h@{s21\_utils.h}!scale\_eq@{scale\_eq}}
+\index{scale\_eq@{scale\_eq}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{scale\_eq()}{scale\_eq()}}
+{\footnotesize\ttfamily int scale\+\_\+eq (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+1,  }\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Function that equalize scales of two decimal numbers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+1} & pointer to decimal number \\
+\hline
+{\em val\+\_\+2} & pointer to decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+code error 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_aee88b3d8ce18d40d9b30a44538894505}\label{s21__utils_8h_aee88b3d8ce18d40d9b30a44538894505} 
+\index{s21\_utils.h@{s21\_utils.h}!set\_bit@{set\_bit}}
+\index{set\_bit@{set\_bit}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{set\_bit()}{set\_bit()}}
+{\footnotesize\ttfamily void set\+\_\+bit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val,  }\item[{int}]{i,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Function that set i-\/th bit for decimal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & pointer to decimal number \\
+\hline
+{\em i} & bit number \\
+\hline
+{\em value} & setting bit value (0 or 1) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_ae2ae63099d1245ac094b244120fa9068}\label{s21__utils_8h_ae2ae63099d1245ac094b244120fa9068} 
+\index{s21\_utils.h@{s21\_utils.h}!set\_scale@{set\_scale}}
+\index{set\_scale@{set\_scale}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{set\_scale()}{set\_scale()}}
+{\footnotesize\ttfamily void set\+\_\+scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val,  }\item[{int}]{scale }\end{DoxyParamCaption})}
+
+
+
+Function that sets decimal number\textquotesingle{}s scale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & pointer to decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of scale 
+\end{DoxyReturn}
+\Hypertarget{s21__utils_8h_a1aa649b12a77193fb4c2acffddc4b3c9}\label{s21__utils_8h_a1aa649b12a77193fb4c2acffddc4b3c9} 
+\index{s21\_utils.h@{s21\_utils.h}!set\_sign@{set\_sign}}
+\index{set\_sign@{set\_sign}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{set\_sign()}{set\_sign()}}
+{\footnotesize\ttfamily void set\+\_\+sign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}} \texorpdfstring{$\ast$}{*}}]{val,  }\item[{int}]{sign }\end{DoxyParamCaption})}
+
+
+
+Function that sets decimal number sign. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & decimal number \\
+\hline
+{\em sign} & sign value of number (0 -\/ positive, 1 -\/ negative) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{s21__utils_8h_a5a0598add14ccde6c515a3b491612f08}\label{s21__utils_8h_a5a0598add14ccde6c515a3b491612f08} 
+\index{s21\_utils.h@{s21\_utils.h}!zero\_check@{zero\_check}}
+\index{zero\_check@{zero\_check}!s21\_utils.h@{s21\_utils.h}}
+\doxysubsubsection{\texorpdfstring{zero\_check()}{zero\_check()}}
+{\footnotesize\ttfamily int zero\+\_\+check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{val\+\_\+1,  }\item[{\mbox{\hyperlink{structs21__decimal}{s21\+\_\+decimal}}}]{val\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Function that check decimal numbers is zero or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+1} & first decimal number \\
+\hline
+{\em val\+\_\+2} & second decimal number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ both of them is zero, 1 -\/ isn\textquotesingle{}t zero (at least one of them) 
+\end{DoxyReturn}

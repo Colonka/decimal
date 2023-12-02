@@ -1,6 +1,6 @@
 # decimal
 
-Implementation of my own s21_decimal.h library.
+Implementation of my own s21_decimal.h library in C programming language.
 
 ## Introduction
 

@@ -10,7 +10,7 @@ In this project I've implemented the s21_decimal.h library in the C programming 
 
 Include s21_decimal.h in your file and link libs21_decimal.a while compilation of your source files.
 
-`#include "<Directory where the header resides>/s21_math.h"`
+`#include "<Directory where the header resides>/s21_decimal.h"`
 
 `-L<Directory where the library resides> -l<library name>`
 
@@ -18,7 +18,7 @@ Include s21_decimal.h in your file and link libs21_decimal.a while compilation o
 
 Being in decimal/src folder run command `make` in terminal that create static library s21_decimal. Then include s21_decimal.h in your file and link libs21_decimal.a while compilation of your source files.
 
-`#include "<Directory where the header resides>/s21_math.h"`
+`#include "<Directory where the header resides>/s21_decimal.h"`
 
 `-L<Directory where the library resides> -l<library name>`
 
@@ -34,7 +34,7 @@ Being in decimal/src folder run command `make gcovr_report`
 
 ## Documentation
 
-To open library documentation run command `make docs` in terminal being in decimal/src folder.
+To open library documentation run command `make dvi` in terminal being in decimal/src folder.
 
 ## Information
 

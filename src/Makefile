@@ -33,26 +33,20 @@ dvi: clean
 	mv html latex docs
 	open docs/html/index.html
 
-docs:
-	open docs/html/index.html
-
 git: clean_for_git
 	git add -A
 	git commit -m "$m"
 	git push origin "$b"
 
-gcov_report_build: test
+gcovr_report: test
 	mkdir -p report
 	./run_tests
 	gcov -f *.gcno
 	gcovr -r. --html --html-details -o report/report.html
 	open report/report.html
 
-gcov_report: 
-	open report/report.html
-
 clean:
 	rm -rf *.gcov *.gcno *.gcda run_tests binary docs *.o *.a
 
 clean_for_git:
-	rm -rf run_tests binary
+	rm -rf run_tests binary report docs
